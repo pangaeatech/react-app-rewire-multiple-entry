@@ -1,6 +1,6 @@
 {
-  "name": "react-app-rewire-multiple-entry",
-  "version": "1.0.1",
+  "name": "@pangaeatech/react-app-rewire-multiple-entry",
+  "version": "1.0.2",
   "description": "Multiple Entry Support for Create-React-App",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Derek-Hu/react-app-rewire-multiple-entry.git"
+    "url": "git+https://github.com/pangaeatech/react-app-rewire-multiple-entry.git"
   },
   "keywords": [
     "reacte",

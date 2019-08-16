@@ -86,6 +86,8 @@ module.exports = function (params) {
 
       entries.forEach(_entry => {
         multipleEntry[_entry.name] = necessaryEntry.concat(_entry.entry);
+        let baseEntry = _entry.base ? { base: _entry.base } : {};
+
         // Multiple Entry HTML Plugin
         config.plugins.push(
           new defaultEntryHTMLPlugin.constructor(
@@ -93,7 +95,7 @@ module.exports = function (params) {
               filename: _entry.outPath,
               template: _entry.template,
               chunks: [_entry.name]
-            })
+            }, baseEntry)
           )
         );
       });
